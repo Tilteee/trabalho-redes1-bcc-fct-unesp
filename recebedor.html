@@ -10,7 +10,6 @@
 	  var socket = io('http://localhost:4555', {transports: ['websocket', 'polling', 'flashsocket']}); // Define a prioridade dos protocolos utilizados, para a comunicação entre o usuário e o servidor
 	  socket.on('notificacao', (data) => { // arrow function para exibit a notificação, passando o dado recebido do server-side para o client-side
 	    alert(data); // alert para mostrar a notificação na tela do client-side, através da resposta recebida
-		console.log(data);   
 	  });
 	</script>
 </body>
